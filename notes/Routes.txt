@@ -1,0 +1,7 @@
+Installation:
+
+composer require jazer/jobposting:dev-main
+php artisan vendor:publish --tag=jobpostingconfig-config
+
+users/xxx
+
