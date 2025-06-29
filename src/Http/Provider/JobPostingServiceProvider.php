@@ -16,11 +16,11 @@ class JobPostingServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->publishes([
-            __DIR__ . '/../../../config/config.php' => config_path('jazerjobpostingconfig.php')
-        ], 'jazerjobpostingconfig-config');
+            __DIR__ . '/../../../config/config.php' => config_path('jtjobpostingconfig.php')
+        ], 'jtjobpostingconfig-config');
         
         $this->loadRoutesFrom( __DIR__ . '/../../../routes/api.php');
 
-        config(['database.connections.conn_jobposting' => config('jobposting.database_connection')]);
+        config(['database.connections.conn_jobposting' => config('jtjobpostingconfig.database_connection')]);
     }
 }
