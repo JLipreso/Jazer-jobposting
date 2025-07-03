@@ -1,6 +1,6 @@
 {
     "name": "jazer/jobposting",
-    "description": "Jazer package to handle user API request",
+    "description": "Jazer package to handle job posting API request",
     "type": "package",
     "license": "MIT",
     "autoload": {
